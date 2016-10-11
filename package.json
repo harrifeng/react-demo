@@ -2,7 +2,7 @@
   "name": "react-demo",
   "version": "1.0.0",
   "description": "react demo code",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/harrifeng/react-demo#readme",
   "dependencies": {
+    "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
     "css-loader": "^0.25.0",
     "jsx-loader": "^0.13.2",
