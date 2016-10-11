@@ -5,6 +5,12 @@ var ejs = require('ejs');
 
 var app = express();
 
+app.get('/data/:module', function(req, res, next) {
+    var c_path = req.params.module;
+    var Action = require('./server/action/data/' + c_path);
+    Action.execute(req, res);
+});
+
 app.get('/', function(req, res) {
     res.render('index');
 });
